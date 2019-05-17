@@ -1,3 +1,6 @@
+<div class="container">
+<div class="form-group">
+
 <h1>Edit your task</h1>
 
 
@@ -6,6 +9,10 @@
   <%= f.text_field :title %>
   <%= f.label :details %>
   <%= f.text_field :details %>
+  <%= f.check_box :completed %>
+  <%= f.label :completed %>
   <%= f.submit %>
 <% end %>
-
+<%= link_to "👈", tasks_path %>
+</div>
+</div>
